@@ -1,0 +1,15 @@
+class Solution {
+    public int divide(int dividend, int divisor) { int count =0;
+        int a=Math.abs(dividend );
+        int b=Math.abs(divisor );
+        while(a>b)
+        { a=a-b;
+         count++;
+        }
+                                                  while(dividend<0 || divisor <0)
+                                                  { count=-count;}
+                                                  return(count);
+            
+        
+    }
+}
